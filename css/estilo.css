@@ -1,0 +1,640 @@
+/*  
+
+PADRÃO DE CORES
+
+AZUL CLARO      CINZA AZULADO      LARANJA MEDIO
+#00A3E0         #3F5765            #FF530D
+#40BAE8         #67818C            #FF753D
+#73CCEE         #8FA3AA            #FF976D
+#A6DFF4         #B8C4C9            #FFBA9E
+#D9F1FA         #E1E6E8            #FFDCCE
+
+
+AMARELO         LARANJA BASE       CINZA
+#FFD100         #FE8A12            #2B3A42
+#FFDD40         #FEA141            #556167
+#FFE673         #FEB870            #7F888D
+#FFEFA6         #FED0A0            #AAB0B3
+#FFF8D9         #FEE7CF            #D4D7D9
+
+AZUL PRIN       VERDE MEDIO        VERDE TIFANI
+#005587         #027223            #00C7B1
+#4080A5         #41955A            #32B9D1
+#73A2BD         #74B186            #66CADC
+#A6C4D5         #A6CEB2            #99DCE8
+#D9E6ED         #D9EADE            #CCEDF3
+
+*/
+
+
+/* INICIO DO MENU*/
+
+body { 
+    font-size: 1.05em;
+    line-height: 1.25em;
+    font-family: Helvetica, Arial;
+    background: #005587;
+    color: white;
+    background-image: url(../img/linhas.png);
+}
+
+a {
+    color: #005587;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #73CCEE;
+}
+
+img {
+    width: 100%;
+}
+
+
+header {
+    width: 100%;
+    height: 76px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00A3E0;
+}
+
+#logo{
+    margin: 20px;
+    float: left;
+    width: 200px;
+    height: 40px;
+    background: url(../img/logo_menor.png) no-repeat center;
+    display: block;
+}
+
+nav {
+    float: right;
+    padding: 20px;  
+}
+
+#menu-icon {
+    display: hidden;
+    width: 40px;
+    height: 40px;
+    background: #005587 url(../img/menu-icon.png) center;
+}
+
+a:hover#menu-icon {
+    background-color: #444;
+    border-radius: 4px 4px 0 0;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    display: inline-block;
+    float: left;
+    padding: 10px
+}
+
+h1 {
+    font-size: 2em;
+    line-height: 1.15em;
+    margin: 20px 0;
+    text-align: center;
+}
+
+p {
+    line-height: 1.45em;
+    margin-bottom: 20px;
+}
+
+/*MEDIA QUERY*/
+@media only screen and (max-width : 640px) {
+
+    header {
+        position: absolute;
+    }
+
+    #menu-icon {
+        display:inline-block;
+    }
+
+    nav ul, nav:active ul { 
+        display: none;
+        position: absolute;
+        padding: 20px;
+        background: #fff;
+        right: 20px;
+        top: 60px;
+        width: 50%;
+    }
+
+    nav li {
+        text-align: center;
+        width: 100%;
+        padding: 10px 0;
+        margin: 0;
+    }
+
+    nav:hover ul {
+        display: block;
+    }
+
+}
+/*FIM DO MENU*/
+
+#logoprincipal img{
+        width: 200px;
+        margin-left: 43%;
+        margin-top: 5%;
+}
+
+
+@media only screen and (max-width : 600px) {
+    #logoprincipal img{
+       display:none;
+    }
+}
+
+
+* {
+    box-sizing: border-box;
+}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="col-"] {
+        width: 100%;
+    }
+}
+
+
+.footer {
+   // background-color:#005587;
+    width: 100%;
+    margin: 0px;
+    height: 300px;
+}
+
+
+/*CONTEUDO 1*/
+@media only screen and (min-width : 300px) {
+     #conteudo1 img{
+        width: 100%;
+    }
+}
+
+
+
+	#conteudo1 h1{
+		text-align: center;
+		color: white;  
+	}
+
+	#conteudo1 p{
+		color: white;
+		line-height: 135%;  
+	}
+
+	#conteudofundo2{
+        border-top-left-radius: 30px;
+        background-color: #FE8A12;
+    }
+
+    #conteudofundo3{
+        border-top-right-radius: 30px;
+        background-color: #00C7B1;
+    }
+
+     #conteudofundo4{
+        background-color: #027223;
+    }
+
+     #conteudofundo5{
+        background-color: #FFD100;     
+    }
+
+      #conteudofundo6{
+        background-color: #FF530D;
+    }
+
+     #conteudofundo7{
+        background-color: #FE8A12;
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+    }
+
+
+
+    #conteudofundo2:hover{
+        background-image: url(../img/bolinha.png);
+  
+    }
+
+     #conteudofundo3:hover{
+        background-image: url(../img/bolinha.png);
+  
+    }
+
+     #conteudofundo4:hover{
+        background-image: url(../img/bolinha.png);
+  
+    }
+
+     #conteudofundo5:hover{
+        background-image: url(../img/bolinha.png);
+    
+    }
+
+     #conteudofundo6:hover{
+        background-image: url(../img/bolinha.png);
+ 
+    }
+
+     #conteudofundo7:hover{
+        background-image: url(../img/bolinha.png);
+ 
+    }
+    
+
+
+    @media only screen and (max-width : 700px) {
+       #conteudofundo2{
+        border-radius: 30px;
+        }
+
+        #conteudofundo3{
+        border-radius: 30px;
+        }
+
+        #conteudofundo4{
+        border-radius: 30px;
+        }
+
+        #conteudofundo5{
+        border-radius: 30px;
+        }
+
+        #conteudofundo6{
+        border-radius: 30px;
+        }
+        #conteudofundo7{
+        border-radius: 30px;
+        }        
+    }
+
+    .redesociais{
+
+        width: 60px;
+        font-size: 40px;
+        margin-top: 15px;
+        text-align: right;
+    }
+
+    .textorodape{
+           font-size: 20px;
+
+
+    }
+
+    .imgrodape img{
+        width:150px;
+    }
+
+
+/*Inicia Formulario*/
+
+#formulario{
+    text-align: center;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+    color:    white;
+ }
+
+ input, textarea{
+    text-shadow: 1px 1px rgb(85, 85, 85);
+
+ }
+
+/* quando screen < 640px*/
+@media only screen and (max-width : 640px) {    
+    input[type=text], input[type=email]{
+        font-size: 15px;
+        color: rgb(255, 255, 255);
+        padding: 20px 20px;
+        width: 100%;
+        height: 30px;
+        margin: 6px;  
+        background-color: none;
+        background: none;
+        border-bottom: 4px solid #00A3E0;
+        border-left: none;
+        border-top: none;
+        border-right: none;     
+    }
+    textarea{
+        font-size: 15px;
+        color: white;
+        padding: 20px 20px;
+        width: 100%;
+        margin: 6px;
+        background-color: none;
+        background: none;
+        border-bottom: 4px solid #00A3E0;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+    }    
+    input[type=submit]{
+        font-size: 15px;
+        color: white;
+        width: 60%;
+        height: 50px;
+        margin: 6px;        
+        border: none;
+        border-radius: 8px;
+        background-color: #FE8A12;
+    }
+}
+
+/* quando screen >= 640px*/
+@media only screen and (min-width : 640px) {    
+    input[type=text], input[type=email]{
+        font-size: 25px;
+        color: white;
+        padding: 20px 20px;
+        width: 60%;
+        height: 30px;
+        margin: 6px;  
+        background-color: none;
+        background: none;
+        border-bottom: 4px solid #00A3E0;
+        border-left: none;
+        border-top: none;
+        border-right: none;      
+    }
+    textarea{
+        font-size: 25px;
+        color: white;
+        padding: 20px 20px;
+        width: 60%;
+        margin: 6px;
+        border: 2px solid #00A3E0;
+        background-color: none;
+        background: none;
+        border-bottom: 4px solid #00A3E0;
+        border-left: none;
+        border-top: none;
+        border-right: none;
+    }  
+    input[type=submit]{
+        font-size: 25px;
+        color: white;
+        width: 60%;
+        height: 50px;
+        margin: 6px;        
+        border: none;
+        border-radius: 8px;
+        background-color: #FE8A12;
+    }
+}
+
+input[type=submit]:hover {
+    background-color: #00A3E0;
+}
+
+
+/*CORES ESPORTES*/
+
+    #esportes1{
+        background-color: #00A3E0;
+		font-size:10px;
+		text-align:center;
+    }
+	
+	#esportes2{
+        background-color: #3F5765;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes3{
+        background-color: #FF530D;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes4{
+        background-color: #FFD100;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes5{
+        background-color: #FE8A12;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes6{
+        background-color: #2B3A42;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes7{
+        background-color: #005587;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes8{
+        background-color: #027223;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes9{
+        background-color: #00C7B1;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes10{
+        background-color: #00A3E0;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes11{
+        background-color: #3F5765;
+		font-size:10px;
+		text-align:center;
+    }
+
+    #esportes12{
+        background-color: #FF530D;
+		font-size:10px;
+		text-align:center;
+    }
+
+
+
+
+    #esportes1:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes2:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes3:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes4:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes5:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes6:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes7:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes8:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes9:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes10:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes11:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+
+    #esportes12:hover{
+        background-image: url(../img/bolinha.png);
+        border: 1px solid white;
+    }
+	
+	
+	 #esportes1 a{
+        color:white;
+    }
+	
+	#esportes2 a{
+		color:white;
+    }
+
+    #esportes3 a{
+		color:white;
+    }
+
+    #esportes4 a{
+		color:white;
+    }
+
+    #esportes5 a{
+		color:white;
+    }
+
+    #esportes6 a{
+		color:white;
+    }
+
+    #esportes7 a{
+		color:white;
+    }
+
+    #esportes8 a{
+		color:white;
+    }
+
+    #esportes9 a{
+		color:white;
+    }
+
+    #esportes10 a{
+		color:white;
+    }
+
+    #esportes11 a{
+		color:white;
+    }
+
+    #esportes12 a{
+		color:white;
+    }
+	
+	
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
